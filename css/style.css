@@ -87,8 +87,8 @@ input[type="checkbox"]:checked ~ #menu {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 5rem 2rem;
-    width: 80%;
+    padding: 5rem 0rem;
+    width: 100%;
 }
 
 .header-h1 {
@@ -109,6 +109,11 @@ input[type="checkbox"]:checked ~ #menu {
     height: 50px;
     color: #ffffff;
     font-size: 16px;
+}
+
+.btn:hover {
+    background: #ffffff;
+    color: #d17870;
 }
 
 .btn-header {
@@ -185,6 +190,8 @@ input[type="checkbox"]:checked ~ #menu {
 .works-second {
     margin: 0 15px;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .works-item img {
@@ -193,6 +200,52 @@ input[type="checkbox"]:checked ~ #menu {
 
 .works-item {
     margin-top: 30px;
+}
+
+.paralax {
+    background-image: url("../img/callbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 360px;
+    text-align: center;
+}
+
+.paralax-h2, .paralax-p {
+    color: #ffffff;
+}
+
+.paralax-h2{
+    padding-top: 8rem;
+}
+
+.paralax-span {
+    text-transform: uppercase;
+}
+.paralax-section-second {
+    margin-top: 10rem;
+}
+
+.paralax-line {
+    border: 1px solid #dddddd;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.paralax-item > img {
+    width: 90%;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fourth-part-first {
+    display: flex;
+    flex-direction: column;
+}
+
+.fourth-part-first > img {
+    width: 80%;
+    margin: 15px;
 }
 
 @media screen and (max-width: 760px) {
@@ -211,6 +264,53 @@ input[type="checkbox"]:checked ~ #menu {
         min-width: 100px;
         height: 25px;
     }
-}
 
+    }
+
+@media screen and (min-width: 760px){
+    .service-second {
+    flex-direction: row;
+    }
+
+    .about-second {
+    display: flex;
+    flex-direction: row;
+    }
+
+    .gallery {
+    display: flex;
+    flex-direction: row;
+    }
+
+    .about-item > img {
+    width: 96%;
+    padding: 15px;
+    }
+
+    .works-second {
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+    }
+
+    .works-item {
+        margin: 20px 20px 10px 20px;
+
+    }
+
+    .paralax-item {
+        flex-direction: row;
+    }
+
+
+    .fourth-part-first {
+        flex-direction: row;
+    }
+
+    .about-fav {
+        margin-top: -4rem;
+        margin-bottom: 3rem;
+    }
+
+}
 
