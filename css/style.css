@@ -270,8 +270,9 @@ input[type="checkbox"]:checked ~ #menu {
 }
 
 .indicator {
-    padding: 2px;
+    padding: 0px 6px 0;
     margin: 5px;
+    border-radius: 50%;
     background: #000;
 }
 
@@ -330,9 +331,34 @@ footer {
     padding-top: 100px;
 }
 
+#get-form {
+    width: 280px;
+}
 
+.item-service > img:hover {
+    opacity: 0.5;
+    background: rgba(115, 164, 200, 0.3);
+    border-radius: 50%;
+}
 
-@media screen and (max-width: 760px) {
+.work-inner-item {
+    margin-top: -11rem;
+    margin-bottom: 6rem;
+    padding: 0 5px;
+    text-align: center;
+    visibility: hidden;
+}
+
+.works-item:hover .work-inner-item{
+    visibility: visible;
+}
+
+.work-item-p1 {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
     .header-ul {
         position: static;
         display: none;
@@ -348,9 +374,21 @@ footer {
         min-width: 100px;
         height: 25px;
     }
+
 }
 
 @media screen and (min-width: 760px) {
+
+    .header-ul {
+        margin-left: 9rem;
+        margin-top: 2rem;
+    }
+
+    .menu-li a {
+        color: #ffffff;
+        background: #dddddd00;
+        min-width: 117px;
+    }
     .service-second {
         flex-direction: row;
     }
@@ -427,6 +465,7 @@ footer {
 
     .cet-in-touch-third{
         margin-top: 2rem;
+        margin-left: 3rem ;
     }
 
     .cet-in-touch {
@@ -449,7 +488,43 @@ footer {
     }
 
     .cet-in-touch {
-        margin-top: 94rem;}
+        margin-top: 94rem;
+    }
+
+    #get-form {
+        width: 576px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .menu-li {
+        width: 110px;
+    }
+
+    .header-ul {
+        margin-left: 18rem;
+        margin-top: 2rem;
+    }
+
+    .menu-li a {
+        color: #ffffff;
+        background: #dddddd00;
+    }
+
+    header {
+        background-size: cover;
+        height: 500px;
+    }
+
+    .header-captions {
+        padding: 8rem 0rem;
+    }
+
 }
 
+@media screen and (min-width: 1440px){
+    .header-ul {
+        margin-left: 32rem;
+    }
+}
 
